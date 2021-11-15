@@ -70,7 +70,71 @@
 // var newArr=arr.flat(2); 
 // document.write("After flattening the array:  "+newArr);
 
-var sname = new String("Rahul is here");
-var lname = "c ex";
-document.write(sname.indexOf("is"));
+// var sname = new String("Rahul is here is ");
+// var lname = "c ex";
+// document.write(sname.split(" "));
 
+/**java script date object */
+// var todat = new Date();
+// document.writeln(todat);
+
+
+// var date = new Date();
+// var day = date.getDate();
+// var month = date.getMonth()+1;
+// var year = date.getUTCFullYear();
+// document.write(date);
+// document.write("<br>"+day);
+// document.write("<br>"+month);
+// document.write("<br>"+year);
+
+
+/**
+ * set digital clock
+ */
+// window.onload=function(){getTime();}
+// function getTime(){
+//     var today = new Date();
+//     var h= today.getHours();
+//     var m = today.getMinutes();
+//     var s = today.getSeconds();
+
+//     m=checkTime(m);
+//     s=checkTime(s);
+//     // document.write(h+":"+m+":"+s+"<br>");
+//     document.getElementById('txt').innerHTML=h+":"+m+":"+s;  
+//     setTimeout(function(){getTime()},1000);
+// }
+// function checkTime(i) {
+//     if(i<10) {
+//         i="0"+i;
+//     }
+//     return i;
+// }
+
+
+// document.write(Math.sqrt(17));
+// document.write(Math.random());
+// document.write(Math.pow(3,4));
+// document.write(Math.floor(4.6));
+// window.alert("hello javatpoint");  
+// history.back();
+
+    // var x = "Java Enabled: " + navigator.javaEnabled();
+    // document.writeln(x);
+  
+
+// function printValue() {
+//    var num = document.getElementById("number").value;
+//     document.write(num*num*num);
+// }
+
+// function totalelements() {
+//     var allgender=document.getElementsByName("gender");
+//     alert("Total Genders: "+allgender.length);
+// }
+
+// function countpara() {
+//     var totalpara = document.getElementsByTagName("p");
+//     alert("Total p tags are : "+totalpara.length);
+// }
