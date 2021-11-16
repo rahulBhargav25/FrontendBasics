@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        emp={id:102,name:"Shyam Kumar",salary:40000}
+        document.write(emp.id+" "+emp.name+" "+emp.salary+"<br>");
+    </script>
+    <script>
+        var emp = new Object();
+        emp.id=101;
+        emp.name="honi";
+        emp.salary=40000;
+        document.write(emp.id+" "+emp.name+" "+emp.salary+"<br>");
+    </script>
+    <script>
+        function emp(id,name,salary) {
+            this.id=id;
+            this.name=name;
+            this.salary=salary;
+
+        }
+        e=new emp(103,"vimal paan masala",30000);
+
+        document.write(e.id+" "+e.name+" "+e.salary+"<br>");
+    </script>
+    <script>
+        function Employee(firstName,lastName) {
+            this.firstName=firstName;
+            this.lastName=lastName;
+        }
+
+        Employee.prototype.fullName=function() {
+            return this.firstName+" "+this.lastName;
+        }
+
+        var employee1 = new Employee("Martin","Roy");
+        var employee2 = new Employee("Duke","William");
+        document.write(employee1.fullName()+"<br>");
+        document.write(employee2.fullName());
+    </script> -->
+    <!-- <script>
+        function Employee(firstName,lastName) {
+            this.firstName=firstName;
+            this.lastName=lastName;
+        }
+        Employee.prototype.company="javapoint";
+
+        var employee1 = new Employee("Martin","Roy");
+        var employee2 = new Employee("Duke","William");
+        document.write(employee1.firstName+" "+employee1.lastName+" "+employee1.company+"<br>");
+        document.write(employee2.firstName+" "+employee2.lastName+" "+employee2.company);
+        
+    </script> -->
+    <!-- <script>
+        class Employee {
+            constructor() {
+                this.id=101;
+                this.name="Martin Roy";
+            }
+        }
+
+        var emp = new Employee();
+        document.write(emp.id+" "+emp.name);
+
+    </script> -->
+
+    <script>
+        class CompanyName {
+            constructor() {
+                this.company="javapoint";
+            }
+        }
+
+        class Employee extends CompanyName {
+            constructor(id,name) {
+                super();
+                this.id=id;
+                this.name=name;
+            }
+        }
+        var emp = new Employee(1,"john");
+        document.write(emp.id+" "+emp.name+" "+emp.company);
+    </script>
+
+</body>
+</html>

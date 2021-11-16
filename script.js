@@ -138,3 +138,4 @@
 //     var totalpara = document.getElementsByTagName("p");
 //     alert("Total p tags are : "+totalpara.length);
 // }
+

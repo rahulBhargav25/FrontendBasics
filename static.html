@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        class Test {
+            static dispay() {
+                return "static method is invoked";
+            }
+            static display() {
+                return "static method invoked again";
+            }
+        }
+
+        //document.write(Test.dispay()+"<br>");
+        document.write(Test.display());
+        
+    </script> -->
+
+    <!-- <script>
+        class Test{
+            constructor() {
+                document.write(Test.display() + "<br>");
+                document.write(this.constructor.display());
+            }
+
+            static display() {
+                return "static invoked";
+            }
+        }
+        var t = new Test();
+    </script> -->
+<!-- 
+    <script>
+        class Test {
+            static display() {
+                return "stativ invoked";
+            }
+
+            show() {
+                document.write(Test.display()+"<br>");
+            }
+        }
+
+        var t = new Test();
+        t.show();
+    </script> -->
+
+    <!-- <script>
+        class Student {
+            constructor() {
+                var name;
+                var marks;
+            }
+            getName() {return this.name;}
+            setName(name) {this.name=name;}
+            getMarks() {return this.marks;}
+            setMarks(marks) {
+                if(marks<0||marks>100) {alert("invalid marks");}
+                else {this.marks=marks}
+            }
+        }
+
+        var stud = new Student();
+        stud.setName("Rahul");
+        stud.setMarks(180);
+        document.write(stud.getName()+" "+stud.getMarks()+"<br>");
+    </script> -->
+
+    <script>
+        function Student(name,marks) {
+            var s_name=name;
+            var s_marks=marks;
+            Object.defineProperty(this,"name",{
+                get:function() {
+                    return s_name;
+                },
+                set:function(s_name) {
+                    this.s_name=s_name;
+                }
+            });
+            Object.defineProperty(this,"marks",{
+                get:function() {
+                    return s_marks;
+                },
+                set:function(s_marks) {
+                    this.s_marks=s_marks;
+                }
+
+            });
+        }
+        var stud = new Student("john",80);
+        document.write(stud.name+" "+stud.marks);
+    </script>
+</body>
+</html>
