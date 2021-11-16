@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        class A{
+            display() {
+                document.write("A is invoked <br>");
+            }
+        }
+        class B extends A{
+            display() {
+                document.write("B is invoked <br>");
+            }
+        }
+
+        var a = [new A(),new B()]
+        a.forEach(function(msg) {
+            msg.display();
+        });
+    </script> -->
+
+    <script>
+        function A() {
+
+        }
+        A.prototype.display = function() {
+            return "A is invoked";
+        }
+        function B() {
+
+        }
+        B.prototype = Object.create(A.prototype);
+        var a = [new A(),new B()]
+        a.forEach(function(msg){
+            document.write(msg.display()+"<br>");
+        }); 
+    </script>
+</body>
+</html>
