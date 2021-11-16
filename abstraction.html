@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        function Vehicle() {
+            this.vehicleName = vehicleName;
+            throw new Error("You can't create instance of this abstract class");
+        }
+        Vehicle.prototype.display=function() {
+            return this.vehicleName;
+        }
+        function Bike(vehicleName) {
+            this.vehicleName=vehicleName;
+        }
+
+        Bike.prototype=Object.create(Vehicle.prototype);
+        var bike = new Bike("Honda");
+        document.write(bike.display());
+    </script> -->
+    <script>
+        function Vehicle() {
+            this.vehicleName = vehicleName;
+            throw new Error("can't create instance of an Abstract class");
+        }
+        function Bike(vehicleName) {
+            this.vehicleName=vehicleName;
+        }
+        Bike.prototype=Object.create(Vehicle.prototype);
+        var bike = new Bike("Honda");
+        document.write(bike instanceof Vehicle);
+        document.write("<br>");
+        document.write(bike instanceof Bike);
+    </script>
+</body>
+</html>
