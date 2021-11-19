@@ -1,0 +1,15 @@
+<script>
+    var lang="java";
+    function lang_name(call) {
+        call();
+    }
+
+    var obj={
+        lang:"javascript",
+        language:function() {
+            document.writeln(this.lang+"is a programming language<br>");
+        }
+    }
+    lang_name(obj.language);
+    lang_name(obj.language.bind(obj));
+</script>

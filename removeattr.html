@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .jtp {
+            color: aqua;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <button onclick = "fun()">  
+        Click me!  
+        </button>  
+    <p id="para" class="jtp">Here</p>
+    <p id="para2" class="jtp">Here there</p>
+
+    <script>
+        function fun() {
+            document.getElementById("para").removeAttribute("class");
+            document.getElementById("para2").removeAttribute("class");
+        }
+    </script>
+</body>
+</html>
